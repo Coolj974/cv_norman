@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'https://fonts.googleapis.com/css?family=Open+Sans' %>
+    <%= stylesheet_link_tag    'https://fonts.googleapis.com/css?family=Saira+Extra+Condensed' %>
+  </head>
+
+  <body>
+    <div class="container-fluid p-0">
+    <%= render "shared/navbar" %>
+    <%= yield %>
+    <%= render "shared/experience" %>
+    <%= render "shared/education" %>
+    <%= render "shared/skills" %>
+    <%= render "shared/interests" %>
+    <%= render "shared/certifications" %>
+  </div>
+
+    <!-- Plugin JavaScript -->
+    <script src="../assets/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../assets/resume.min.js"></script>
+  </body>
+</html>
