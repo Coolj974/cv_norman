@@ -2,5 +2,4 @@
   "name": "cv_norman",
   "private": true,
   "dependencies": {},
-  "engines": { "node": "8.11.3" }
 }
